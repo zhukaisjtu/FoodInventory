@@ -1,5 +1,6 @@
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -9,10 +10,19 @@ public class Food {
     private int foodId;
     private String foodName;
     private int numberOfUnits;
+    private Date buyDate;
     private int daysBeforeExpire;
 
     public int getFoodId() {
         return foodId;
+    }
+
+    public Date getBuyDate() {
+        return buyDate;
+    }
+
+    public void setBuyDate(Date buyDate) {
+        this.buyDate = buyDate;
     }
 
     public void setFoodId(int foodId) {

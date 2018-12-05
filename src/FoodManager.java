@@ -2,6 +2,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class FoodManager {
@@ -12,6 +14,8 @@ public class FoodManager {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             food.setFoodId(generateUniqueFoodId());
+            Date today = Calendar.getInstance().getTime();
+            food.setBuyDate(today);
             session.save(food);
             transaction.commit();
             session.close();
