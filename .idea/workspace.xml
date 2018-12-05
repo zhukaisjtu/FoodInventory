@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fed9d3a-3113-42ea-96f3-c0d863f9729f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CLI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FoodManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoodManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FoodManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FoodManagerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +38,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1545" />
+          <entry key="java" value="2136" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1545" />
+          <entry key="JAVA" value="2136" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -63,20 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CLI.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FoodManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="77" column="47" lean-forward="true" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+            <state relative-caret-position="228">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FoodManager.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state relative-caret-position="337">
+              <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/FoodManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="290">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -117,9 +115,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/DBManager.java" />
-        <option value="$PROJECT_DIR$/test/FoodManagerTest.java" />
         <option value="$PROJECT_DIR$/src/Food.java" />
         <option value="$PROJECT_DIR$/src/FoodManager.java" />
+        <option value="$PROJECT_DIR$/test/FoodManagerTest.java" />
         <option value="$PROJECT_DIR$/src/CLI.java" />
       </list>
     </option>
@@ -158,7 +156,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543975801288" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543977573026" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -220,14 +218,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FoodManagerTest.searchFoodByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FoodInventory" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FoodManagerTest" />
+      <option name="METHOD_NAME" value="searchFoodByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.FoodManagerTest.addFood" />
       <item itemvalue="JUnit.FoodManagerTest.deleteFood" />
       <item itemvalue="Application.CLI" />
+      <item itemvalue="JUnit.FoodManagerTest.searchFoodByName" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CLI" />
+        <item itemvalue="JUnit.FoodManagerTest.searchFoodByName" />
         <item itemvalue="JUnit.FoodManagerTest.deleteFood" />
         <item itemvalue="JUnit.FoodManagerTest.addFood" />
       </list>
@@ -247,12 +257,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FoodManagerTest_addFood - 2018.12.05 at 11h 01m 31s.xml">
-      <configuration name="FoodManagerTest.addFood" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FoodManagerTest_addFood - 2018.12.05 at 11h 04m 44s.xml">
-      <configuration name="FoodManagerTest.addFood" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FoodManagerTest_addFood - 2018.12.05 at 11h 10m 29s.xml">
       <configuration name="FoodManagerTest.addFood" configurationId="JUnit" />
     </history-entry>
@@ -267,6 +271,21 @@
     </history-entry>
     <history-entry file="FoodManagerTest_deleteFood - 2018.12.05 at 11h 57m 53s.xml">
       <configuration name="FoodManagerTest.deleteFood" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FoodManagerTest_searchFoodByName - 2018.12.05 at 13h 20m 36s.xml">
+      <configuration name="FoodManagerTest.searchFoodByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FoodManagerTest_searchFoodByName - 2018.12.05 at 13h 23m 01s.xml">
+      <configuration name="FoodManagerTest.searchFoodByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FoodManagerTest_searchFoodByName - 2018.12.05 at 13h 25m 33s.xml">
+      <configuration name="FoodManagerTest.searchFoodByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FoodManagerTest_searchFoodByName - 2018.12.05 at 13h 25m 53s.xml">
+      <configuration name="FoodManagerTest.searchFoodByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FoodManagerTest_searchFoodByName - 2018.12.05 at 13h 27m 17s.xml">
+      <configuration name="FoodManagerTest.searchFoodByName" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -319,6 +338,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/FoodManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -326,24 +352,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/FoodManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FoodManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        <state relative-caret-position="228">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CLI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="77" column="47" lean-forward="true" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+        <state relative-caret-position="337">
+          <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
         </state>
       </provider>
     </entry>

@@ -36,6 +36,14 @@ public class FoodManager {
         return true;
     }
 
+    public List<Food> searchFoodByName(String foodName) {
+        SessionFactory sessionFactory = DBManager.getSessionFactory();
+        Session session = sessionFactory.openSession();
+        List<Food> list = session.createQuery("from Food where foodName like'%"+foodName+"%'").getResultList();
+        return list;
+
+    }
+
     protected int generateUniqueFoodId() {
         SessionFactory sessionFactory = DBManager.getSessionFactory();
         Session session = sessionFactory.openSession();

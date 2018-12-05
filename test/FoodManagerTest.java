@@ -1,8 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FoodManagerTest {
 
     @Test
@@ -25,5 +23,17 @@ class FoodManagerTest {
         food.setDaysBeforeExpire(5);
         FoodManager foodManager = new FoodManager();
         Assertions.assertTrue(foodManager.deleteFood(food));
+    }
+
+    @Test
+    void searchFoodByName() {
+        Food food = new Food();
+        food.setFoodId(1);
+        food.setFoodName("tomato");
+        food.setNumberOfUnits(5);
+        food.setDaysBeforeExpire(2);
+
+        FoodManager foodManager = new FoodManager();
+        Assertions.assertEquals(food, foodManager.searchFoodByName("tomato").get(0));
     }
 }

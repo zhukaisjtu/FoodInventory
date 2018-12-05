@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -76,5 +77,32 @@ public class CLI {
     // Delete Food
     private static void deleteFood() {
         System.out.println("deleting food...");
+
+        System.out.println("Enter food name: ");
+        String foodName = scanner.nextLine(); // <------------------ Check food name
+
+        List<Food> list = null;
+        FoodManager foodManager = new FoodManager();
+        list = foodManager.searchFoodByName(foodName);
+
+        if (list.size() == 0) {
+            System.out.println("There is no such food!");
+        } else {
+            int i = 1;
+            for(Food f:list) {
+                System.out.println(i + ": " + f);
+            }
+            System.out.println("please enter the number of item to delete. Enter 0 to delete all."); // <---- check num
+            int num = Integer.parseInt(scanner.nextLine());
+            if (num == 0) {
+                for (Food f: list) {
+                    foodManager.deleteFood(f);
+                }
+            } else {
+                foodManager.deleteFood(list.get(num - 1));
+            }
+        }
+        System.out.println("Deleted! \n");
+
     }
 }
