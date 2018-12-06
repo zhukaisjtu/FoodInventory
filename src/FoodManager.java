@@ -26,6 +26,16 @@ public class FoodManager {
         return false;
     }
 
+    public boolean updateFood(Food food) {
+        SessionFactory sessionFactory = DBManager.getSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(food);
+        transaction.commit();
+        session.close();
+        return true;
+    }
+
     public boolean deleteFood(Food food) {
         SessionFactory sessionFactory = DBManager.getSessionFactory();
         Session session = sessionFactory.openSession();
@@ -41,6 +51,14 @@ public class FoodManager {
         Session session = sessionFactory.openSession();
         List<Food> list = session.createQuery("from Food where foodName like'%"+foodName+"%'").getResultList();
         return list;
+
+    }
+
+    public boolean isFoodNameInDB(String foodName) {
+        SessionFactory sessionFactory = DBManager.getSessionFactory();
+        Session session = sessionFactory.openSession();
+        List<String> list = session.createQuery("select foodName from Food").getResultList();
+        return list.contains(foodName) ? true:false;
 
     }
 
